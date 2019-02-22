@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.urls import path
 
-from . import views
+from books import views
 
 urlpatterns = [
     path('', views.BookList.as_view(), name='book_list'),
